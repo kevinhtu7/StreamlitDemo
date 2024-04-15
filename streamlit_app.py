@@ -1,7 +1,3 @@
-
-
-with open("streamlit-app.py", "w") as f:
-  f.write("""
 import streamlit as st
 from langchain.llms import OpenAI
 st.title('🦜🔗 Quickstart App')
@@ -19,5 +15,3 @@ with st.form('my_form'):
     st.warning('Please enter your OpenAI API key!', icon='⚠')
   if submitted and openai_api_key.startswith('sk-'):
     generate_response(text)
-
-    """)

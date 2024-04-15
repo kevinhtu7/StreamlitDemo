@@ -1,4 +1,4 @@
-!pip install streamlit
+pip install streamlit
 
 with open("streamlit-app.py", "w") as f:
   f.write("""
